@@ -1,0 +1,9 @@
+type Query {
+    allBook: [Book]
+    getBookByTitle(filter: BookInput): Book
+}
+
+type Mutation {
+    newBook(input: NewBook): BookOutput
+    deleteBook(input:BookInput): BookOutput
+}
